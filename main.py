@@ -4,6 +4,7 @@ from src.agent import run_llm
 st.set_page_config(page_title="LangChain Pub-Quiz Agent", layout="centered")
 
 st.title("Pub Quiz Chatbot")
+st.markdown("**Team**: Not the Spanish Inquizition")
 
 with st.sidebar:
     st.subheader("Clear Chat")
