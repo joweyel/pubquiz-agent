@@ -1,3 +1,6 @@
 .env
 __pycache__/
-venv
+venv/
+.venv/
+PubDatabase/
+eval_results/

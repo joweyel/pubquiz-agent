@@ -1,0 +1,40 @@
+[project]
+name = "langchain-pubquiz"
+version = "1.2.0"
+description = "Pubquiz Agent Updated to LangChain 1.2"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4",
+    "black",
+    "tiktoken",
+    "openai",
+    "unstructured",
+    "nltk",
+    "fastapi",
+    "jinja2",
+    "uvicorn",
+    "streamlit",
+    "streamlit-chat",
+    "tqdm",
+    "isort",
+    "langchainhub",
+    "firecrawl-py",
+    "langchain-community",
+    "langsmith",
+    "pillow",
+    "langchain-tavily",
+    "langchain-pinecone",
+    "certifi",
+    "langchain-chroma",
+    "python-dotenv",
+    "faster-whisper>=1.2.1",
+    "wolframalpha<5.1.3",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel",
+]
+
+[tool.uv.sources]
+wolframalpha = { git = "https://github.com/lixinhua108/wolframalpha.git", rev = "patch-2" }
