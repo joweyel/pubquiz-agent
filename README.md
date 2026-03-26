@@ -2,7 +2,7 @@
 
 A LangChain-based agent that answers pub quiz questions using a combination of tools: a local vector database and web search. Originally built with a now-deprecated version of LangChain in January 2024 at an event hosted by HMS in Heidelberg.
 
-<video src="assets/video_compressed.mp4" controls width="100%"></video>
+<video src="assets/video.mp4" controls width="100%"></video>
 
 ## Features
 
