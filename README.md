@@ -1,6 +1,8 @@
 # PubQuiz Agent
 
-A LangChain-based agent that answers pub quiz questions using a combination of tools: a local vector database and web search.
+A LangChain-based agent that answers pub quiz questions using a combination of tools: a local vector database and web search. Originally built with a now-deprecated version of LangChain in January 2024 at an event hosted by HMS in Heidelberg.
+
+<video src="assets/video_compressed.mp4" controls width="100%"></video>
 
 ## Features
 
@@ -23,6 +25,18 @@ pubquiz-agent/
 │   └── ingestion.py        # Data ingestion pipeline (text + audio)
 ├── PubTexts/               # Text documents for the knowledge base
 └── PubAudio/               # mp3 audio files for transcription
+```
+
+## How It Works
+
+```mermaid
+flowchart TD
+    U[User Query] --> A[LangChain Agent]
+    A -->|knowledge base question| B[(Chroma DB)]
+    A -->|general / current events| C[Tavily Web Search]
+    B --> D[Generate Answer]
+    C --> D
+    D --> E[Answer + Sources]
 ```
 
 ## Setup
@@ -50,6 +64,13 @@ pubquiz-agent/
 
 ```bash
 uv run python3 src/ingestion.py
+```
+
+```mermaid
+flowchart TD
+    A[PubAudio/*.mp3] -->|faster-whisper| B[PubTexts/*.mp3.txt]
+    B & C[PubTexts/*.txt] --> D[Load & Split]
+    D -->|OpenAI embeddings| E[(Chroma DB)]
 ```
 
 ### Run the app
