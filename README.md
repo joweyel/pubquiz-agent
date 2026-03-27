@@ -6,6 +6,8 @@ A LangChain-based agent that answers pub quiz questions using a combination of t
   <source src="https://github.com/joweyel/pubquiz-agent/raw/main/assets/video.mp4" type="video/mp4">
 </video>
 
+https://github.com/user-attachments/assets/615227bc-53ec-4044-974c-162a3b83e4da
+
 ## Features
 
 - **RAG pipeline**: local knowledge base with German criminal law, Romeo and Juliet, The Gift of the Magi, and German government speeches
