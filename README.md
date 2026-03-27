@@ -96,10 +96,6 @@ uv run python eval.py
 
 [pubquiz-eval Dataset and Experiments](https://eu.smith.langchain.com/public/604da62e-14af-42d9-85a9-4e7d50d27016/d/compare?selectedSessions=95f9f4f4-85cd-447b-abcb-393e055486c5&activeSession=95f9f4f4-85cd-447b-abcb-393e055486c5)
 
-**`LangSmith-Trace Example:`**
-
-https://eu.smith.langchain.com/public/7260bac8-daad-43f3-8eb2-77ccdd665a35/r
-
 
 ## Tech Stack
 
